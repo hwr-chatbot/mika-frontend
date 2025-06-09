@@ -15,7 +15,7 @@ fi
 cd "$APP_DIR"
 
 echo "🔄 Hole aktuelle Änderungen aus Git..."
-git pull origin main
+git pull origin master
 
 echo "📦 Installiere Abhängigkeiten..."
 npm install
