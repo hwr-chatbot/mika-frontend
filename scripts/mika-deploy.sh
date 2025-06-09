@@ -24,12 +24,12 @@ npm run build
 
 echo "🚀 Starte oder restarte den Webserver mit PM2..."
 
-if pm2 describe mika-frontend > /dev/null; then
+if pm2 describe mika-frontend > /dev/null 2>&1; then
   echo "🔄 Prozess 'mika-frontend' gefunden, starte Neustart..."
   pm2 restart mika-frontend --update-env
 else
   echo "🚀 Prozess 'mika-frontend' nicht gefunden, starte neu..."
-  pm2 start "npm run preview -- --port 5173" --name mika-frontend
+  pm2 start "npm run preview" --name mika-frontend
 fi
 
 echo "✅ Deployment abgeschlossen!"
