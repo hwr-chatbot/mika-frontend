@@ -2,7 +2,7 @@
 set -e
 
 APP_DIR="/home/s_winklerf23/apps/mika-frontend"
-REPO_URL="git@github-frontend.com:hwr-chatbot/mika-frontend.git"
+REPO_URL="git@github-frontend:hwr-chatbot/mika-frontend.git"
 
 echo "📁 Wechsle ins App-Verzeichnis: $APP_DIR"
 
