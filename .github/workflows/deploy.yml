@@ -24,13 +24,5 @@ jobs:
             - name: Build project
               run: npm run build
 
-            - name: Deploy via SSH and restart pm2
-              uses: appleboy/ssh-action@v0.1.8
-              with:
-                  host: mika.lehre.hwr-berlin.de
-                  username: s_winklerf23
-                  key: ${{ secrets.MIKA_DEPLOY_FRONTEND_KEY }}
-                  port: 22
-                  script: |
-                      cd /home/s_winklerf23/apps/mika-frontend
-                      bash scripts/mika-deploy.sh
+            - name: Run deploy script on server
+              run: bash /home/s_winklerf23/apps/mika-frontend/scripts/mika-deploy.sh
