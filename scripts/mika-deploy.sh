@@ -6,8 +6,9 @@ REPO_URL="git@github.com:hwr-chatbot/mika-frontend.git"
 
 echo "📁 Wechsle ins App-Verzeichnis: $APP_DIR"
 
-if [ ! -d "$APP_DIR" ]; then
-  echo "📦 Verzeichnis existiert nicht. Klone Repository..."
+if [ ! -d "$APP_DIR" ] || [ ! -d "$APP_DIR/.git" ]; then
+  echo "📦 Verzeichnis existiert nicht oder ist kein Git-Repo. Klone Repository..."
+  rm -rf "$APP_DIR"
   git clone "$REPO_URL" "$APP_DIR"
 fi
 
