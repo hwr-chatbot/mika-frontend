@@ -29,7 +29,7 @@ if pm2 describe mika-frontend > /dev/null 2>&1; then
   pm2 restart mika-frontend --update-env
 else
   echo "🚀 Prozess 'mika-frontend' nicht gefunden, starte neu..."
-  pm2 start "npm run preview" --name mika-frontend
+  pm2 start "npm run preview -- --port 5173 --host 0.0.0.0" --name mika-frontend
 fi
 
 echo "✅ Deployment abgeschlossen!"
