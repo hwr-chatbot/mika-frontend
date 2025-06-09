@@ -1,0 +1,36 @@
+name: Deploy Frontend to Mika Server
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v3
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "18"
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build project
+              run: npm run build
+
+            - name: Deploy via SSH and restart pm2
+              uses: appleboy/ssh-action@v0.1.8
+              with:
+                  host: mika.lehre.hwr-berlin.de
+                  username: s_winklerf23
+                  key: ${{ secrets.MIKA_DEPLOY_FRONTEND_KEY }}
+                  port: 22
+                  script: |
+                      cd /home/s_winklerf23/apps/mika-frontend
+                      bash scripts/mika-deploy.sh
