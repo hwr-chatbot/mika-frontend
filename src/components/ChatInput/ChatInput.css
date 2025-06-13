@@ -1,16 +1,16 @@
 ::-webkit-input-placeholder {
-	/* Chrome/Opera/Safari */
-	font-size: 1rem;
+    /* Chrome/Opera/Safari */
+    font-size: 1rem;
 }
 ::-moz-placeholder {
-	/* Firefox 19+ */
-	font-size: 1rem;
+    /* Firefox 19+ */
+    font-size: 1rem;
 }
 :-ms-input-placeholder {
-	/* IE 10+ */
-	font-size: 1rem;
+    /* IE 10+ */
+    font-size: 1rem;
 }
 :-moz-placeholder {
-	/* Firefox 18- */
-	font-size: 1rem;
+    /* Firefox 18- */
+    font-size: 1rem;
 }

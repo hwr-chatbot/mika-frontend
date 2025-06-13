@@ -1,12 +1,12 @@
 .chatbubble-container {
-	color: white;
-	display: flex;
-	padding-left: 1em;
-	padding-right: 1em;
-	min-height: 48px;
-	justify-content: space-between;
-	padding-bottom: 0.2em;
-	margin-bottom: 0.5em;
-	margin-top: 0.5em;
-	font-size: 1em;
+    color: white;
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    min-height: 48px;
+    justify-content: space-between;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
 }
