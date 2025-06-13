@@ -1,9 +1,8 @@
-import React from "react"
-import ModalWindow from "../ModalWindow"
-import Content from "./Content"
+import ModalWindow from "../ModalWindow";
+import Content from "./Content";
 
 const HelpModal = () => {
-	return <ModalWindow content={<Content />} symbol="❓" />
-}
+    return <ModalWindow content={<Content />} symbol="❓" />;
+};
 
-export default HelpModal
+export default HelpModal;

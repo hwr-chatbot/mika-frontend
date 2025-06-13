@@ -1,9 +1,8 @@
-import React from "react"
-import ModalWindow from "../ModalWindow"
-import Content from "./Content"
+import ModalWindow from "../ModalWindow";
+import Content from "./Content";
 
 const FeedbackModal = () => {
-	return <ModalWindow content={<Content />} symbol="📣" />
-}
+    return <ModalWindow content={<Content />} symbol="📣" />;
+};
 
-export default FeedbackModal
+export default FeedbackModal;
