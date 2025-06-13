@@ -1,87 +1,87 @@
 @font-face {
-	font-family: 'DIN';
-	src: local('DIN'), url(./assets/fonts/din_regular.woff2) format('woff2');
-	font-weight: normal;
-	font-style: normal;
-  }
-
-@font-face {
-	font-family: 'DIN';
-	src: local('DIN Bold'), url(./assets/fonts/din_bold.woff2) format('woff2');
-	font-weight: bold;
-	font-style: normal;
+    font-family: "DIN";
+    src:
+        local("DIN"),
+        url(./assets/fonts/din_regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
-
 @font-face {
-font-family: 'Crimson Text';
-font-style: normal;
-font-weight: 400;
-src: local('Crimson Text'), url(./assets/fonts/CrimsonText-Roman.woff) format('woff');
+    font-family: "DIN";
+    src:
+        local("DIN Bold"),
+        url(./assets/fonts/din_bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
 }
 
-
+@font-face {
+    font-family: "Crimson Text";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Crimson Text"),
+        url(./assets/fonts/CrimsonText-Roman.woff) format("woff");
+}
 
 @font-face {
-font-family: 'Crimson Text';
-font-style: normal;
-font-weight: 600;
-src: local('Crimson Text'), url(./assets/fonts/CrimsonText-Semibold.woff) format('woff');
+    font-family: "Crimson Text";
+    font-style: normal;
+    font-weight: 600;
+    src:
+        local("Crimson Text"),
+        url(./assets/fonts/CrimsonText-Semibold.woff) format("woff");
 }
 
 body {
-	overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 #root {
-	/* margin: 0 auto; */
-	/* padding: 1rem; */
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	background-color: #f7f8f8;
-	font-family: 'DIN', sans-serif;
-	letter-spacing: calc(0.8px - 0.025em);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f8f8;
+    font-family: "DIN", sans-serif;
+    letter-spacing: calc(0.8px - 0.025em);
 
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
-
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 .app {
-	background-color: #f7f8f8;
+    background-color: #f7f8f8;
 }
 
 .maintext {
-	font-family: 'Crimson Text', serif;
-	font-size: 21px;
+    font-family: "Crimson Text", serif;
+    font-size: 21px;
     line-height: 1.15;
-	letter-spacing: 0.015em;
-	font-weight: 400;
+    letter-spacing: 0.015em;
+    font-weight: 400;
 
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
-  
 
 @keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
-
