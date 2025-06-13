@@ -4,9 +4,9 @@ const Footer = () => {
             <footer>
                 <div className="flex justify-center items-center pt-6 pb-6 bg-[#D50C2F] text-white">
                     <nav className="flex items-center">
-                        <span className="text-sm text-white font-bold pr-32">© HWR Berlin 2024</span>
+                        <span className="text-sm text-white font-bold pr-32">© HWR Berlin 2025</span>
                         <a href="https://www.hwr-berlin.de/" className="text-sm text-white hover:text-gray-300">
-                            Main website
+                            Hochschule für Wirtschaft und Recht Berlin
                         </a>
                         <a
                             href="#"

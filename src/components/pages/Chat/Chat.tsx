@@ -30,7 +30,12 @@ export default function Chat({}: ChatProps) {
             <div className="bg-white pl-40 pr-16 pb-16 grid grid-cols-3 gap-4">
                 <div className="col-span-2 pr-8">
                     <div className="bg-white pl-0 p-8 text-left">
-                        <h1 className="text-[#202020] text-5xl font-bold tracking-tight">Chat with MIKA</h1>
+                        <div className="flex items-center gap-3">
+                            <h1 className="text-[#202020] text-5xl font-bold tracking-tight">Chat with MIKA</h1>
+                            <span className="bg-gray-600 text-white text-sm font-semibold px-3 mt-1 py-1 rounded-full">
+                                BETA
+                            </span>
+                        </div>
                     </div>
                     <div className="chat-container relative text-md text-white h-[600px] pb-4 overflow-hidden rounded-md border-4 bg-white flex justify-items-end justify-end flex-col">
                         <Downloader data={".chatview-history"} fileName={fileName} />
@@ -64,7 +69,11 @@ export default function Chat({}: ChatProps) {
                             find an answer for you. MIKA does not save or remember any previous information, so it can
                             not recall any previous exchanges it has had. Please remember to always seek advice directly
                             via email, telephone or in-person consultation with the Student Advisory staff. Feedback can
-                            be sent to studienberatung@hwr-berlin.de
+                            be sent to{" "}
+                            <a href="mailto:studienberatung@hwr-berlin.de" className="text-blue-600 hover:underline">
+                                studienberatung@hwr-berlin.de
+                            </a>
+                            .
                         </p>
                         <br></br>
                     </div>
