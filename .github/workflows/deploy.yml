@@ -18,8 +18,8 @@ jobs:
               with:
                   node-version: "18"
 
-            - name: Install Yarn
-              run: npm install -g yarn
+            - name: Enable Corepack (Yarn)
+              run: corepack enable
 
             - name: Install dependencies
               run: yarn install --frozen-lockfile
